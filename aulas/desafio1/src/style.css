@@ -1,0 +1,196 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  background-color: #3b5998;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.header nav > ul > li {
+  color: #fff;
+}
+
+.post {
+  margin-top: 25px;
+  width: 60vw;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(168, 168, 168, 1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(168, 168, 168, 1);
+  box-shadow: 0px 0px 5px 0px rgba(168, 168, 168, 1);
+}
+
+.post-header {
+  height: 80px;
+  color: #929292;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.post-header > ul {
+  display: flex;
+  align-items: center;
+}
+
+.post-header > ul > li {
+  padding-right: 15px;
+}
+
+.post-header .post-avatar img {
+  border-radius: 50%;
+}
+
+.post-header .post-name {
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.post-header .post-time {
+  font-size: 0.8rem;
+}
+
+.post p {
+  margin-top: 20px;
+  color: #929292;
+  font-family: 'Roboto', sans-serif;
+  line-height: 2;
+}
