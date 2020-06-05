@@ -1,16 +1,18 @@
 import React from 'react';
-import { Provider } from 'react-redux';
-import GlobalStyle from './styles/global';
-import Main from './pages/Main';
 
+import { Provider } from 'react-redux';
 import store from './store';
 
-import ToDoList from './components/ToDoList';
+import GlobalStyle from './styles/global';
+import '././config/ReactotronConfig';
+import Routes from './pages/Main';
+
+console.tron.log('Testando');
 
 const App = () => (
   <Provider store={store}>
     <GlobalStyle />
-    <ToDoList />
+    <Routes />
   </Provider>
 );
 
